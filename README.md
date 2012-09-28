@@ -40,7 +40,8 @@ Block components have, but aren't limited to, a variety of types.
 			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The *Block types* .B--wrapper and/or .B--container are <a id="top-level"></a>top level *Block types*.  This means that [modifiers](#modifier) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+<a id="top-level"></a>
+The *Block types* .B--wrapper and/or .B--container are top level *Block types*.  This means that [modifiers](#modifier) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -144,10 +145,10 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 	<div class="B--container example"><p>Some example text</p></div>
 	<div class="B--container avatar"><img src="/img/avatar.png" /></div>
 
-####Types
+####<a id="key-modifiers"></a>Types
 
 - **Generic modifiers** : See modifier definition
-- **<a id="key-modifiers"></a>Key modifiers** : Used on [top level](#top-level) Block types. 
+- **Key modifiers** : Used on [top level](#top-level) Block types. 
 
 
 Globals
