@@ -40,7 +40,7 @@ Block components have, but aren't limited to, a variety of types.
 			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The *Block types* .B--wrapper and/or .B--container are <a href="#top-level">top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+The *Block types* .B--wrapper and/or .B--container are <a id="top-level"></a>top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -125,8 +125,8 @@ Utility components are used to abstract commonly used CSS properties.  For examp
 	</ul>
 
 
-<a href="#modifier">Modifiers</a>
----------------------------------
+<a id="modifier"></a>Modifiers
+------------------------------
 
 Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* components that have common namespaces. For example, say there are two contianers that have the same *Block* component class .B--container.  In order to create two unique containers, a modifier class can be added to each of the containers. 
 
@@ -147,7 +147,7 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 ####Types
 
 - **Generic modifiers** : See modifier definition
-- **Key modifiers** : Used on <a href="#top-level">top level</a> Block types. 
+- **<a id="key-modifier"></a>Key modifiers** : Used on [top level](#top-level) Block types. 
 
 
 Globals
