@@ -1,5 +1,5 @@
-Truss
-=====
+**Truss**
+=========
 
 An Object Oriented CSS Framework
 
