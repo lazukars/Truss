@@ -29,18 +29,18 @@ Block components are used to style the structure of an element.  Typically, but 
 
 ####Types####
 
-Block components have, but not limited to, a variety of types.
+Block components have, but aren't limited to, a variety of types.
 
 - **.B--wrapper** ( top level type ) : Used on wrapper elements
 	- **.B--container** ( top level type ) : Used on container elements 
-		- **.B--content** : Used on elements that contain an entire article for example.  The article in this case *is*  the content.
+		- **.B--content** : Used on elements that contain an entire article for example.
 			- **.B--title** : Used on elements that contain a title. For example, the .B--title class would be used on an article's title element.
 			- **.B--copy** : Used on elements with sections of text.  For example, the .B--copy class would be used on each paragraph within an article  
-			- **.B--image** : Used on elements that are or contain an image.  For example, the .B--image class would be place on an <img> within an article
-			- **.B--list** :  Used on items within a list.
+			- **.B--image** : Used on elements that are or contain an image.  For example, the .B--image class would be place on an image within an article
+			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The block types .B--wrapper and/or .B--container are <a href="top-level">top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent block type.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+The *Block types* .B--wrapper and/or .B--container are <a href="#top-level">top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -147,7 +147,7 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 ####Types
 
 - **Generic modifiers** : See modifier definition
-- **Key modifiers** : Used on [top level](#top-level) Block components. 
+- **Key modifiers** : Used on <a href="#top-level">top level</a> Block types. 
 
 
 Globals
