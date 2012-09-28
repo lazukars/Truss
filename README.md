@@ -13,7 +13,7 @@ Components
 
 There are 3 components to the Truss methhodolgy:
 
-###1.) Block Component *.B--*
+###1.) Block Component **.B--**
 
 Block components are used to style the structure of an element.  Typically, but not limited to, css properties like, *padding, margin, position, display, top, left, bottom, right, bottom, text-align, and width*, are used to style a *Block* component.
 
@@ -25,6 +25,7 @@ Block components are used to style the structure of an element.  Typically, but 
 	</style>
 
 	<div class="B--container"><p>Example text</p></div>
+
 
 ####Types####
 
@@ -39,7 +40,7 @@ Block components have, but not limited to, a variety of types.
 			- **.B--list** :  Used on items within a list.
 				- **.B--item** :  Used on items within a list.
 
-The block types .B--wrapper and/or .B--container are top level *Block types*.  This means that modifiers on .B--wrapper or .B--container types should flow down the *Block type*  chain. So for example, if the *Block type* .B--container is used on an article modifier of *article* could be used on the .B--container block type.  Then the *article* modifier would be used on every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+The block types .B--wrapper and/or .B--container are <a href="top-level">top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent block type.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -83,7 +84,8 @@ The block types .B--wrapper and/or .B--container are top level *Block types*.  T
 		</article>
 	</div>	
 
-###2.) Skin Component *.S--*
+
+###2.) Skin Component **.S--**
 
 Style components are used to add a design skin to an element.  Typically, but not limited to, css properties like, *font-size, font-family, background-color, border, and box-shadow*, are used to to style a *Skin* component.
 
@@ -98,7 +100,8 @@ Style components are used to add a design skin to an element.  Typically, but no
 
 	<div class="B--container"><p class="S--standout">Some example text</p></div>
 
-###3.) Utility Component *.U--*
+
+###3.) Utility Component **.U--**
 
 Utility components are used to abstract commonly used CSS properties.  For example, if the design calls for horizontally aligned elements, the utility component .U--array across can be used.
 
@@ -122,8 +125,8 @@ Utility components are used to abstract commonly used CSS properties.  For examp
 	</ul>
 
 
-Modifiers
----------
+<a href="#modifier">Modifiers</a>
+---------------------------------
 
 Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* components that have common namespaces. For example, say there are two contianers that have the same *Block* component class .B--container.  In order to create two unique containers, a modifier class can be added to each of the containers. 
 
@@ -140,6 +143,12 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 
 	<div class="B--container example"><p>Some example text</p></div>
 	<div class="B--container avatar"><img src="/img/avatar.png" /></div>
+
+####Types
+
+- **Generic modifiers** : See modifier definition
+- **Key modifiers** : Used on [top level](#top-level) Block components. 
+
 
 Globals
 -------
