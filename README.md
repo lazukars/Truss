@@ -147,7 +147,7 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 ####Types
 
 - **Generic modifiers** : See modifier definition
-- **<a id="key-modifier"></a>Key modifiers** : Used on [top level](#top-level) Block types. 
+- **<a id="key-modifiers"></a>Key modifiers** : Used on [top level](#top-level) Block types. 
 
 
 Globals
