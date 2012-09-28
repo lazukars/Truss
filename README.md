@@ -13,7 +13,7 @@ Components
 
 There are 3 components to the Truss methhodolgy:
 
-**1. .B--** Block Component *( .B--example )*
+###1.) .B--### Block Component *( .B--example )*
 
 Block components are used to style the structure of an element.  Typically, but not limited to, css properties like, padding, margin, position, display, top, left, bottom, right, bottom, text-align, and width, are used to style a *Block* component.
 
@@ -26,7 +26,7 @@ Block components are used to style the structure of an element.  Typically, but 
 
 	<div class="B--container"><p>Example text</p></div>
 
-###Types###
+####Types####
 
 Block components have a variety of types.
 
@@ -39,7 +39,7 @@ Block components have a variety of types.
 			- **.B--item** :  Used on items within a list.
 
 
-**2. .S--** Skin Component *( .S--example )*
+###2.) .S--### Skin Component *( .S--example )*
 
 Style components are used to add a design skin to an element.  Typically, but not limited to, css properties like, font-size, font-family, background-color, border, and box-shadow, are used to to style a *Skin* component.
 
@@ -54,7 +54,7 @@ Style components are used to add a design skin to an element.  Typically, but no
 
 	<div class="B--container"><p class="S--standout">Some example text</p></div>
 
-**3. .U--** Utility Component *( .U--example )*
+###3.) .U--### Utility Component *( .U--example )*
 
 Utility components are used to abstract commonly used CSS properties.  For example, if the design calls for horizontally aligned elements, the utility component .U--array across can be used.
 
