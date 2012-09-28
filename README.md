@@ -40,7 +40,7 @@ Block components have, but aren't limited to, a variety of types.
 			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The *Block types* .B--wrapper and/or .B--container are <a id="top-level"></a>top level</a> *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+The *Block types* .B--wrapper and/or .B--container are <a id="top-level"></a>top level *Block types*.  This means that [modifiers](#modifier) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#key-modifiers). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
