@@ -6,7 +6,7 @@ An Object Oriented CSS Framework
 Overview
 --------
 
-The Truss framworks consists of components classes, modifiers classes.
+The Truss framworks consists of components classes and modifiers classes.
 
 Components
 ----------
@@ -40,7 +40,7 @@ Block components have, but aren't limited to, a variety of types.
 			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The *Block types* .B--wrapper and/or .B--container are top level *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#types-1). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  See below for an in depth example. 
+The *Block types* .B--wrapper and/or .B--container are top level *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#types-1). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier should be used on every descendent *Block type*.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -87,7 +87,7 @@ The *Block types* .B--wrapper and/or .B--container are top level *Block types*. 
 
 ###2.) Skin Component **.S--**
 
-Style components are used to add a design skin to an element.  Typically, but not limited to, css properties like, *font-size, font-family, background-color, border, and box-shadow*, are used to to style a *Skin* component.
+Style components are used to add a design skin to an element.  Typically, but not limited to, css properties like, *font-size, font-family, background-color, border, and box-shadow*, are used to style a *Skin* component.
 
 
 	<style type="css">
@@ -128,7 +128,7 @@ Utility components are used to abstract commonly used CSS properties.  For examp
 Modifiers
 ---------
 
-Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* components that have common namespaces. For example, say there are two contianers that have the same *Block* component class .B--container.  In order to create two unique containers, a modifier class can be added to each of the containers. 
+Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* components. For example, say there are two contianers that have the same *Block* component class .B--container.  In order to create two unique containers, a modifier class can be added to each of the containers. 
 
 
 	<style type="css">
@@ -168,7 +168,7 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 		<p class="S--standout.red">Example text -- First example</p>
 		<p class="S--standout.gray">Example text -- Second example</p>
 
-	The difference between *Global* modifiers and *Generic* modifiers is that generic modifiers are always combined classes.  So in the example below, .special in, .S--standout.special, is a *Generic* modifier, while .red is a *Global* modifier.  However, it is important to note that both the *Global* and *Generic* modifiers are undistinguishable in the HTML markup. 
+	The difference between *Global* modifiers and *Generic* modifiers is that generic modifiers are always combined classes.  So in the example below, .special, in .S--standout.special, is a *Generic* modifier, while .red is a *Global* modifier.  However, it is important to note that both the *Global* and *Generic* modifiers are undistinguishable in the HTML markup. 
 
 		<style type="css">
 			.S--standout.{
