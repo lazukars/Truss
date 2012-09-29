@@ -40,7 +40,7 @@ Block components have, but aren't limited to, a variety of types.
 			- **.B--list** :  Used on list elements.
 				- **.B--item** :  Used on items within a list.
 
-The *Block types* .B--wrapper and/or .B--container are top level *Block types*.  This means that [modifiers][] on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers][types-1]. So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
+The *Block types* .B--wrapper and/or .B--container are top level *Block types*.  This means that [modifiers](#modifiers) on .B--wrapper or .B--container types should flow down the *Block type*  chain. These kind of modifiers are called [key-modifiers](#types-1). So for example, if the *Block type* .B--container has a key-modifier of *article*  ( class=".B--container article") , then the *article* key-modifier would be used on every descendent *Block type*.  Every descendent block type within the .B--conainter article container.  See below for an in depth example. 
 
 	<style type="css">
 		.B--container.article{
@@ -147,7 +147,7 @@ Modifiers are CSS classes that create unique *Block*, *Style*, and *Utility* com
 ####Types
 
 - **Generic modifiers** : See modifier definition
-- **Key modifiers** : Used on [top level][types] Block types. 
+- **Key modifiers** : Used on [top level](#types) Block types. 
 
 
 Globals
@@ -171,4 +171,46 @@ Globals are CSS classes that can be used by muliple components.  For example, sa
 
 	<p class="S--standout.red">Example text -- First example</p>
 	<p class="S--standout.gray">Example text -- Second example</p>
+
+FAQ
+---
+
+- *Why do you use these ugly .B--, .S--, U--, prefixes?*
+
+The main reason is to make it clear to the developer the function of the class. If there are are no prefixes then it would be hard for the developer to differentiate between a *Block*, *Skin*, *Utility*, or *Modifier* class when looking at the HTML source code.
+
+This is an open source project though, so I'm open to alternatives.
+
+- *Why do Block Types like, .B--container, B--content, B--list, and so exist?  These classes are just added CSS bloat*
+
+The Block types are used for two primary reasons.  One, they prevent css specificity problems.  Two, if you keep all of your Block Types together in your CSS, it helps structuring your .css file.
+
+- *ids aren't used in this framework. Why?*
+
+Ids aren't inherently bad, but the entire purpose of using an Object Oriented framework, is to reuse code.  Ids by definition can only be used once, so they aren't a great fit with an Object Oriented CSS approach.
+
+- *Can ids still be used for JavaScript hooks?*
+
+Yes.  But since Block Components are unique ( when combined with modifiers ), it's not necessary.  If that just doesn't do it for ya, you could even create your own component, called .JS-- and use that for JavaScript hooks.
+
+- *Why do you seperate components into Blocks, Skins, and Arrays?*
+
+Seperating Blocks and Skins allows developers to add a Skin to any element on a page without affecting the elements structure. 
+
+
+Influences/Thanks
+-----------------
+
+- [Nicole Sullivan](http://www.stubbornella.org/content/)
+- [OOCSS](https://github.com/stubbornella/oocss/wiki)
+- [BEM Framework](http://bem.github.com/bem-method/html/all.en.html)
+
+
+
+
+
+
+
+
+
 
